@@ -1,4 +1,4 @@
-#Problem
+"""Problem
 
 Given two strings ss and tt, tt is a substring of ss if tt is contained as a contiguous collection of symbols in ss (as a result, tt must be no longer than ss).
 
@@ -10,7 +10,7 @@ The location of a substring s[j:k]s[j:k] is its beginning position jj; note that
 
 Given: Two DNA strings ss and tt (each of length at most 1 kbp).
 
-Return: All locations of tt as a substring of ss.
+Return: All locations of tt as a substring of ss."""
 
 
 #Solution
