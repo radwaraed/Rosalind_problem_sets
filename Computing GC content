@@ -1,2 +1,11 @@
-
-#
+def GCcontent(seq):
+    return (seq.count("G")+seq.count("C"))/len(seq)
+    
+from Bio import SeqIO
+list=[]
+for record in SeqIO.parse("final.fasta", "fasta"):
+    print(record.id)
+    print(GCcontent(record.seq))
+    list.append(GCcontent(record.seq))
+print(list)
+print(max(list))
