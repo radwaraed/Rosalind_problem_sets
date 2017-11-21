@@ -1,1 +1,9 @@
+large="GATATATGCATATACTT"
+small="ATAT"
 
+
+#Finding a motif in DNA
+import regex as re
+for match in re.finditer(small,large,overlapped=True):
+    s=match.start()+1
+    print(s)
